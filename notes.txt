@@ -1,0 +1,19 @@
+11th feb 2023
+
+Download : 
+1. python  : https://www.python.org/downloads/
+2. pycharm : https://www.jetbrains.com/pycharm/download/#section=windows
+
+
+Compiled vs interpreter  :  
+
+https://www.guru99.com/difference-compiler-vs-interpreter.html
+
+Online IDE : https://www.programiz.com/python-programming/online-compiler/
+
+
+
+
+
+
+	
