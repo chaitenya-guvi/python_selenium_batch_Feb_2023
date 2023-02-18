@@ -7,10 +7,10 @@ string2 = "The name is : \n \nChaitenya "
 string3 = "Thenameis:\tline3Chaitenya "
 string4 = "The name is : \\ Chaitenya "
 string5 = "The name is : \" Chaitenya \""
-string6 = 'The name is : \b Chaitenya \''
+string6 = 'The name is : 1\b line 10 Chaitenya \''
 
 path = "C:\\Users\\LENOVO\\Desktop\\guvi_tutorial_feb_2023\\day3_strings.py"
-/\/\/\
+# /\/\/\
 print(path)
 
 
@@ -35,7 +35,8 @@ print(string6)
 # print(string1)
 # print(string_2)
 # string_3 = "while giving the speec the CM said 'Hello There people'"
-# string_4 = 'while giving the speec the CM said "Hello There people"'  # expecting an error
+# string_4 = 'while giving the speec the CM said 'Hello There people''  # expecting an error
+# string_5 = 'while giving the speec the CM said "Hello There people"'  # will print double quotes
 #
 # print(string_3)
 # print(string_4)
