@@ -42,5 +42,10 @@ print(string6)
 # print(string_4)
 #
 
+string1 = "/"
+string2 = "\\"
+
+print((string1+string2)*3)
+
 
 
