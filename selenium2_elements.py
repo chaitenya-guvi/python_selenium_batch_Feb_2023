@@ -12,11 +12,15 @@ class OrangeHrm:
     # what is self keyword , what does __init__
     def __init__(self):
         self.url = "https://opensource-demo.orangehrmlive.com"
-        self.driver = webdriver.Chrome()
+        option1 = webdriver.ChromeOptions()
+        option1.headless =True
+        # nitializing Chrome with headless mode as ON
+        self.driver = webdriver.Chrome(options=option1)
         self.username = "Admin"
         self.password = "admin123"
         self.username_locator_name_tag = "username"
         self.password_locator_name_tag = "password"
+        self.path = 'E:\\guvi_tut_selenium_AT14\\output\\'
 
     def browse(self):
         """
@@ -32,6 +36,7 @@ class OrangeHrm:
         Provide the credential - username and the password
         :return:
         """
+        self.driver.save_screenshot("beforelogin.png")
         username_webelement = self.driver.find_element(By.NAME, self.username_locator_name_tag)
         username_webelement.send_keys(self.username)
 
@@ -42,7 +47,11 @@ class OrangeHrm:
         #  login button on orange hrm
         login_path_xpath = '//button[@type="submit"]'
         login_button_webelement = self.driver.find_element(By.XPATH, login_path_xpath)
+        login_button_webelement.screenshot(self.path + 'loginbutton.png')
         login_button_webelement.click()
+        sleep(3)
+        self.driver.save_screenshot(self.path +"afterlogin.png")
+
 
     def cookies_fom_orange_hrm(self):
         """
@@ -62,7 +71,7 @@ if beforelogin_cookies == after_login_cookies:
     print("login failed ")
 else:
     print("login passed")
-print(obj)
+
 
 abc = [{'domain': 'opensource-demo.orangehrmlive.com',
         'httpOnly': True, 'name': 'orangehrm', 'path': '/web', 'sameSite': 'Strict',
