@@ -19,6 +19,8 @@ class IMDB_elements :
 
     def finding_elements_on_imdb(self):
         webelement_of_tv_episode_checkbox = self.driver.find_element_by_id(self.id_ofTV_episode_checkbox)
+        # webelement_of_tv_episode_checkbox = self.driver.find_element(By.ID,self.id_ofTV_episode_checkbox)
+
         if webelement_of_tv_episode_checkbox :
             print("element found using id")
         else :
@@ -34,6 +36,7 @@ class IMDB_elements :
     def finding_elements_on_imdb_2(self):
         "example of find elements , finding the number of genres "
         webelements_of_genres = self.driver.find_elements_by_name(self.name_of_genres)
+        # webelements_of_genres = self.driver.find_elements(By.NAME,self.name_of_genres)
         if webelements_of_genres :
             print(len(webelements_of_genres))
             print("element found using name")
