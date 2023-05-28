@@ -1,0 +1,25 @@
+tags
+
+a - links
+div - creates different section
+input - usually for input via text or click
+tables - table , tbody , thead - headers of a table  , tr -- rows , td - individual in a table
+img - images
+button - button type
+select - individual select , multiple select , list of options
+li - list tag
+
+
+attributes
+names
+id
+type
+value
+text
+class  = CSS
+options
+src - source of
+href - used with 'a' tags
+
+
+//tag[@attribute='']  ----- xpath syntax
